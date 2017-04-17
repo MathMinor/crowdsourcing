@@ -4,9 +4,21 @@
 
 .carousel-inner img {
   margin: auto;
+  width: 640px;
+  /*height: 424px;*/
 }
 
 .navbar
 {
     margin-bottom: 0px;
 }
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+.info {
+  margin: 15px 15% 1em;
+}
+/*background-color: #5cb85c;*/
