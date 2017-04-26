@@ -12,7 +12,7 @@ class Carousel extends Component{
   }
 
   componentDidMount(){
-    const source = 'techcrunch';
+    const source = 'engadget';
     const apiKey = '577fe23a15a04de097ec8fa33b5392e4';
     const sortBy = 'latest';
     const apiUrl = `https://newsapi.org/v1/articles?source=${source}&sortBy=${sortBy}&apiKey=${apiKey}`;
@@ -34,6 +34,11 @@ class Carousel extends Component{
     let newsImage = this.state.currentNews.map((articleText, i) =>
       <div className={ (i===0) ? "item active": "item" } key={i.toString()}>
         <img src={articleText.urlToImage} alt=""/>
+        <div className="carousel-caption">
+          <a href={articleText.url}>
+            <h4>{articleText.title}</h4>
+          </a>
+        </div>
       </div>
     );
     return(
