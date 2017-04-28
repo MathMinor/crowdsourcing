@@ -22,3 +22,14 @@
   margin: 15px 15% 1em;
 }
 /*background-color: #5cb85c;*/
+#messages {
+  list-style: none; margin: 0; padding: 0
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd){
+  background: #eee;
+}

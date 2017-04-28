@@ -1,6 +1,24 @@
 import React, {Component} from 'react';
 
 class Navbar extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showForum: false,
+      showChat: false
+    }
+    this.chat = this.chat.bind(this);
+    this.forum = this.forum.bind(this);
+  }
+
+  chat() {
+    this.setState({showChat: true});
+  }
+  forum() {
+    this.setState({showForum: true});
+  }
+
   render(){
     return(
       <nav className="navbar navbar-inverse">
