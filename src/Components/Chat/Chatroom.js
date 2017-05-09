@@ -26,7 +26,7 @@ class Chatroom extends Component {
   render(){
     return(
       <div>
-        <Messages example={this.state.newMessage}/>
+        <Messages newMessage={this.state.newMessage}/>
         <input id="m" autoComplete="off" /><button onClick={(e) => this.onClick(e)}>Send</button>
       </div>
     )
