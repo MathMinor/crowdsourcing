@@ -19,9 +19,14 @@ class Messages extends Component {
   render(){
     console.log(this.state.newMessage);
     console.log(this.props.newMessage);
+    let listItems = this.state.newMessage.map((number,i) =>
+        <li key={i}>
+          {number}
+        </li>
+    );
     return(
       <div>
-        <ul id="messages">{this.props.newMessage}</ul>
+        <ul id="messages">{listItems}</ul>
       </div>
     )
   }
