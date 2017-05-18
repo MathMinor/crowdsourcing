@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class Navbar extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class Navbar extends Component {
           </div>
           <div className="collapse navbar-collapse" id="navbar">
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#"><i className="fa fa-comments-o fa-fw" aria-hidden="true"></i>Chatroom</a></li>
+              <li><Link to="/chatroom"><i className="fa fa-comments-o fa-fw" aria-hidden="true"></i>Chatroom</Link></li>
               <li><a href="#"><i className="fa fa-list-alt fa-fw" aria-hidden="true"></i>Forum</a></li>
               <li><a href="#"><i className="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a></li>
             </ul>
