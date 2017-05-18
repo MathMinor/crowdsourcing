@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from './Components/Homepage/Navbar';
-import Carousel from './Components/Homepage/Carousel';
-import Info from './Components/Homepage/Info';
+import Navbar from './Components/Navbar';
+import Homepage from './Components/Home/Homepage';
 import Chatroom from './Components/Chat/Chatroom';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -14,11 +13,9 @@ class App extends Component {
           <div>
             <Navbar />
             <Route path="/chatroom" component={Chatroom}/>
+            <Route exact path="/" component={Homepage}/>
           </div>
         </Router>
-        {/* <Carousel />
-        <Info /> */}
-        {/* <Chatroom /> */}
       </div>
     );
   }
