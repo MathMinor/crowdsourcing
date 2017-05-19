@@ -27,7 +27,9 @@ class Chatroom extends Component {
     return(
       <div>
         <Messages newMessage={this.state.newMessage}/>
-        <input id="m" autoComplete="off" /><button onClick={(e) => this.onClick(e)}>Send</button>
+        <div className="chatForm">
+          <input id="m" autoComplete="off" /><button className="coolButton" onClick={(e) => this.onClick(e)}>Send</button>
+        </div>
       </div>
     )
   }
