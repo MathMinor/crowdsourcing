@@ -36,7 +36,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbar">
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/chatroom"><i className="fa fa-comments-o fa-fw" aria-hidden="true"></i>Chatroom</Link></li>
-              <li><a href="http://localhost:4567"><i className="fa fa-list-alt fa-fw" aria-hidden="true"></i>Forum</a></li>
+              <li><Link to="/forum"><i className="fa fa-list-alt fa-fw" aria-hidden="true"></i>Forum</Link></li>
               {/* <li><a href="#"><i className="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a></li> */}
             </ul>
           </div>
