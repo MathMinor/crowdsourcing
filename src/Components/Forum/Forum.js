@@ -5,11 +5,10 @@ class Forum extends Component {
 
   render(){
     return(
-      <Iframe url="https://youtu.be/embeded/ZOukNzbPMCQ"
+      <Iframe url="https://bing.com"
         width="100%"
         height="100%"
-        display="initial"
-        position="relative"
+        position="absolute"
         allowFullScreen/>
     )
   }

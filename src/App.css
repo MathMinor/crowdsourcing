@@ -8,6 +8,10 @@
   height: 424px;
 }
 
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .navbar
 {
     margin-bottom: 0px;
